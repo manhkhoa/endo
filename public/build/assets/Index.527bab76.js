@@ -1,0 +1,1 @@
+import{r as o,o as t,h as c,j as s,d as i}from"./app.ca5d1c04.js";const r={name:"FinanceConfig"},u=Object.assign(r,{setup(_){const n=[{name:"FinanceConfigGeneral",icon:"fas fa-cogs",label:"config.config"}];return(f,l)=>{const e=o("router-view"),a=o("ModuleConfig");return t(),c(a,{navigations:n},{default:s(()=>[i(e)]),_:1})}}});export{u as default};

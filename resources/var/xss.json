@@ -1,0 +1,6 @@
+{
+	"api/v1/app/utility/todos/*": ["description"],
+	"api/v1/app/utility/todos"  : ["description"],
+	"api/v1/app/tasks/*"        : ["description"],
+	"api/v1/app/tasks"          : ["description"]
+}

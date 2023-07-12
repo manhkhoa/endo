@@ -1,0 +1,101 @@
+{
+	"roles": [
+        "admin",
+        "manager",
+        "staff",
+        "user"
+    ],
+	"permissions": {
+		"general": {
+            "login:action": ["manager", "staff", "user"]
+        },
+        "team": {
+            "team:manage": []
+        },
+        "config": {
+            "config:store": [],
+            "locale:read": [],
+            "locale:create": [],
+            "locale:edit": [],
+            "locale:delete": [],
+            "backup:manage": [],
+            "activity-log:manage": [],
+            "activity-log:export": []
+        },
+		"utility": {
+            "utility:config": [],
+			"todo:manage": ["manager", "staff", "user"],
+            "todo:export": []
+		},
+		"user": {
+            "user:read": ["manager"],
+            "user:create": [],
+            "user:edit": [],
+            "user:delete": [],
+            "user:export": ["manager"]
+		},
+        "modules": {
+        },
+        "company": {
+            "department:read": ["manager"],
+            "department:create": [],
+            "department:edit": [],
+            "department:delete": [],
+            "department:export": ["manager"],
+            "designation:read": ["manager"],
+            "designation:create": [],
+            "designation:edit": [],
+            "designation:delete": [],
+            "designation:export": ["manager"],
+            "designation:admin-access": [],
+            "designation:self-access": [],
+            "designation:subordinate-access": ["manager"],
+            "branch:read": ["manager"],
+            "branch:create": [],
+            "branch:edit": [],
+            "branch:delete": [],
+            "branch:export": ["manager"],
+            "branch:admin-access": [],
+            "branch:self-access": ["manager"],
+            "branch:subordinate-access": ["manager"]
+        },
+        "employee": {
+            "employee:config": [],
+            "employee:read": ["manager", "staff"],
+            "employee:create": ["manager"],
+            "employee:edit": ["manager"],
+            "employee:delete": [],
+            "employee:export": ["manager"],
+            "employment-record:manage": ["manager"]
+        },
+        "calendar": {
+            "holiday:read": ["manager", "staff"],
+            "holiday:create": ["manager"],
+            "holiday:edit": ["manager"],
+            "holiday:delete": [],
+            "holiday:export": ["manager"]
+        },
+        "finance": {
+            "finance:config": [],
+            "ledger:read": ["manager"],
+            "ledger:create": ["manager"],
+            "ledger:edit": [],
+            "ledger:delete": [],
+            "ledger:export": ["manager"],
+            "transaction:read": ["manager"],
+            "transaction:create": ["manager"],
+            "transaction:edit": [],
+            "transaction:cancel": ["manager"],
+            "transaction:delete": [],
+            "transaction:export": ["manager"]
+        },
+        "task": {
+            "task:config": [],
+            "task:read": ["manager", "staff"],
+            "task:create": ["manager"],
+            "task:edit": ["manager"],
+            "task:delete": [],
+            "task:export": ["manager"]
+        }
+	}
+}

@@ -1,0 +1,55 @@
+<?php
+
+return [
+    'contact' => 'Contact',
+    'contacts' => 'Contacts',
+    'info' => 'Contact Information',
+    'props' => [
+        'name' => 'Name',
+        'first_name' => 'First Name',
+        'middle_name' => 'Middle Name',
+        'third_name' => 'Third Name',
+        'last_name' => 'Last Name',
+        'birth_date' => 'Date of Birth',
+        'gender' => 'Gender',
+        'photo' => 'Photo',
+        'birth_place' => 'Birth Place',
+        'nationality' => 'Nationality',
+        'mother_tongue' => 'Mother Tongue',
+        'relation' => 'Relation',
+        'contact_number' => 'Contact Number',
+        'present_address' => 'Present Address',
+        'permanent_address' => 'Permanent Address',
+        'same_as_present_address' => 'Same as Present Address',
+        'email' => 'Email',
+        'address' => [
+            'address_line1' => 'Address Line 1',
+            'address_line2' => 'Address Line 2',
+            'city' => 'City',
+            'state' => 'State',
+            'zipcode' => 'Zipcode',
+            'country' => 'Country',
+        ],
+    ],
+    'config' => [
+        'config' => 'Config',
+        'props' => [
+            'name_includes_middle_name' => 'Name includes Middle Name',
+            'name_includes_third_name' => 'Name includes Third Name',
+        ],
+        'general' => 'General Config',
+    ],
+    'login' => [
+        'login' => 'User Login',
+        'no_login_found' => 'User login details not found.',
+        'email_belongs_to_other_contact' => 'This email belongs to other contact.',
+        'email_belongs_to_team_member' => 'This email belongs to team member\'s email.',
+        'props' => [
+            'username' => 'Username',
+            'email' => 'Email',
+            'role' => 'Role',
+            'password' => 'Password',
+            'password_confirmation' => 'Confirm Password',
+        ],
+    ],
+];
